@@ -56,13 +56,13 @@ namespace Bond_Ring_XML_Generator
 			this.nameTextBox.Location = new System.Drawing.Point(103, 10);
 			this.nameTextBox.MaxLength = 30;
 			this.nameTextBox.Name = "nameTextBox";
-			this.nameTextBox.Size = new System.Drawing.Size(147, 20);
+			this.nameTextBox.Size = new System.Drawing.Size(204, 20);
 			this.nameTextBox.TabIndex = 0;
 			// 
 			// nameTextBoxLabel
 			// 
 			this.nameTextBoxLabel.AutoSize = true;
-			this.nameTextBoxLabel.Location = new System.Drawing.Point(13, 13);
+			this.nameTextBoxLabel.Location = new System.Drawing.Point(14, 13);
 			this.nameTextBoxLabel.Name = "nameTextBoxLabel";
 			this.nameTextBoxLabel.Size = new System.Drawing.Size(87, 13);
 			this.nameTextBoxLabel.TabIndex = 1;
@@ -70,9 +70,8 @@ namespace Bond_Ring_XML_Generator
 			// 
 			// emblemSelectLabel
 			// 
-			this.emblemSelectLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.emblemSelectLabel.AutoSize = true;
-			this.emblemSelectLabel.Location = new System.Drawing.Point(478, 13);
+			this.emblemSelectLabel.Location = new System.Drawing.Point(14, 42);
 			this.emblemSelectLabel.Name = "emblemSelectLabel";
 			this.emblemSelectLabel.Size = new System.Drawing.Size(47, 13);
 			this.emblemSelectLabel.TabIndex = 2;
@@ -80,9 +79,8 @@ namespace Bond_Ring_XML_Generator
 			// 
 			// customGIDLabel
 			// 
-			this.customGIDLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.customGIDLabel.AutoSize = true;
-			this.customGIDLabel.Location = new System.Drawing.Point(479, 45);
+			this.customGIDLabel.Location = new System.Drawing.Point(15, 74);
 			this.customGIDLabel.Name = "customGIDLabel";
 			this.customGIDLabel.Size = new System.Drawing.Size(67, 13);
 			this.customGIDLabel.TabIndex = 5;
@@ -92,9 +90,8 @@ namespace Bond_Ring_XML_Generator
 			// 
 			// customGIDTextBox
 			// 
-			this.customGIDTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.customGIDTextBox.Enabled = false;
-			this.customGIDTextBox.Location = new System.Drawing.Point(552, 42);
+			this.customGIDTextBox.Location = new System.Drawing.Point(87, 71);
 			this.customGIDTextBox.MaxLength = 30;
 			this.customGIDTextBox.Name = "customGIDTextBox";
 			this.customGIDTextBox.Size = new System.Drawing.Size(220, 20);
@@ -104,7 +101,6 @@ namespace Bond_Ring_XML_Generator
 			// 
 			// emblemComboBox
 			// 
-			this.emblemComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.emblemComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.emblemComboBox.FormattingEnabled = true;
 			this.emblemComboBox.Items.AddRange(new object[] {
@@ -129,7 +125,7 @@ namespace Bond_Ring_XML_Generator
             "Veronica",
             "3 Houses",
             "Custom"});
-			this.emblemComboBox.Location = new System.Drawing.Point(528, 10);
+			this.emblemComboBox.Location = new System.Drawing.Point(63, 39);
 			this.emblemComboBox.Name = "emblemComboBox";
 			this.emblemComboBox.Size = new System.Drawing.Size(244, 21);
 			this.emblemComboBox.TabIndex = 7;
@@ -137,10 +133,9 @@ namespace Bond_Ring_XML_Generator
 			// 
 			// singleRankCheckBox
 			// 
-			this.singleRankCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.singleRankCheckBox.AutoSize = true;
 			this.singleRankCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.singleRankCheckBox.Location = new System.Drawing.Point(479, 70);
+			this.singleRankCheckBox.Location = new System.Drawing.Point(14, 99);
 			this.singleRankCheckBox.Name = "singleRankCheckBox";
 			this.singleRankCheckBox.Size = new System.Drawing.Size(101, 17);
 			this.singleRankCheckBox.TabIndex = 8;
@@ -172,9 +167,8 @@ namespace Bond_Ring_XML_Generator
 			// 
 			// skillIDLabel
 			// 
-			this.skillIDLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.skillIDLabel.AutoSize = true;
-			this.skillIDLabel.Location = new System.Drawing.Point(7, 23);
+			this.skillIDLabel.Location = new System.Drawing.Point(6, 21);
 			this.skillIDLabel.Name = "skillIDLabel";
 			this.skillIDLabel.Size = new System.Drawing.Size(43, 13);
 			this.skillIDLabel.TabIndex = 12;
@@ -182,8 +176,7 @@ namespace Bond_Ring_XML_Generator
 			// 
 			// skillIDTextBox
 			// 
-			this.skillIDTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.skillIDTextBox.Location = new System.Drawing.Point(56, 20);
+			this.skillIDTextBox.Location = new System.Drawing.Point(55, 18);
 			this.skillIDTextBox.MaxLength = 40;
 			this.skillIDTextBox.Name = "skillIDTextBox";
 			this.skillIDTextBox.Size = new System.Drawing.Size(212, 20);
@@ -191,10 +184,9 @@ namespace Bond_Ring_XML_Generator
 			// 
 			// enableSkillCRankCheckBox
 			// 
-			this.enableSkillCRankCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.enableSkillCRankCheckBox.AutoSize = true;
 			this.enableSkillCRankCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.enableSkillCRankCheckBox.Location = new System.Drawing.Point(7, 44);
+			this.enableSkillCRankCheckBox.Location = new System.Drawing.Point(6, 42);
 			this.enableSkillCRankCheckBox.Name = "enableSkillCRankCheckBox";
 			this.enableSkillCRankCheckBox.Size = new System.Drawing.Size(141, 17);
 			this.enableSkillCRankCheckBox.TabIndex = 13;
@@ -210,10 +202,9 @@ namespace Bond_Ring_XML_Generator
 			// 
 			// enableSkillBRankCheckBox
 			// 
-			this.enableSkillBRankCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.enableSkillBRankCheckBox.AutoSize = true;
 			this.enableSkillBRankCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.enableSkillBRankCheckBox.Location = new System.Drawing.Point(7, 67);
+			this.enableSkillBRankCheckBox.Location = new System.Drawing.Point(6, 65);
 			this.enableSkillBRankCheckBox.Name = "enableSkillBRankCheckBox";
 			this.enableSkillBRankCheckBox.Size = new System.Drawing.Size(141, 17);
 			this.enableSkillBRankCheckBox.TabIndex = 14;
@@ -222,10 +213,9 @@ namespace Bond_Ring_XML_Generator
 			// 
 			// enableSkillARankCheckBox
 			// 
-			this.enableSkillARankCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.enableSkillARankCheckBox.AutoSize = true;
 			this.enableSkillARankCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.enableSkillARankCheckBox.Location = new System.Drawing.Point(7, 90);
+			this.enableSkillARankCheckBox.Location = new System.Drawing.Point(6, 88);
 			this.enableSkillARankCheckBox.Name = "enableSkillARankCheckBox";
 			this.enableSkillARankCheckBox.Size = new System.Drawing.Size(141, 17);
 			this.enableSkillARankCheckBox.TabIndex = 15;
@@ -234,12 +224,11 @@ namespace Bond_Ring_XML_Generator
 			// 
 			// enableSkillSRankCheckBox
 			// 
-			this.enableSkillSRankCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.enableSkillSRankCheckBox.AutoSize = true;
 			this.enableSkillSRankCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.enableSkillSRankCheckBox.Checked = true;
 			this.enableSkillSRankCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.enableSkillSRankCheckBox.Location = new System.Drawing.Point(7, 113);
+			this.enableSkillSRankCheckBox.Location = new System.Drawing.Point(6, 111);
 			this.enableSkillSRankCheckBox.Name = "enableSkillSRankCheckBox";
 			this.enableSkillSRankCheckBox.Size = new System.Drawing.Size(141, 17);
 			this.enableSkillSRankCheckBox.TabIndex = 16;
@@ -254,7 +243,7 @@ namespace Bond_Ring_XML_Generator
 			this.skillGroupBox.Controls.Add(this.skillIDTextBox);
 			this.skillGroupBox.Controls.Add(this.enableSkillCRankCheckBox);
 			this.skillGroupBox.Controls.Add(this.skillIDLabel);
-			this.skillGroupBox.Location = new System.Drawing.Point(472, 93);
+			this.skillGroupBox.Location = new System.Drawing.Point(7, 122);
 			this.skillGroupBox.Name = "skillGroupBox";
 			this.skillGroupBox.Size = new System.Drawing.Size(300, 146);
 			this.skillGroupBox.TabIndex = 17;
