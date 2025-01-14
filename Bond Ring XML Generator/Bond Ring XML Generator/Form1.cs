@@ -56,7 +56,7 @@ namespace Bond_Ring_XML_Generator
 				enableSkillBRankCheckBox.Checked = false;
 				enableSkillARankCheckBox.Checked = false;
 
-				cRankHPNumericUpDown.Enabled = false;
+				cRankHPNumericUpDown.Enabled  = false;
 				cRankSTRNumericUpDown.Enabled = false;
 				cRankDEXNumericUpDown.Enabled = false;
 				cRankSPDNumericUpDown.Enabled = false;
@@ -67,7 +67,7 @@ namespace Bond_Ring_XML_Generator
 				cRankMOVNumericUpDown.Enabled = false;
 				cRankBLDNumericUpDown.Enabled = false;
 
-				bRankHPNumericUpDown.Enabled = false;
+				bRankHPNumericUpDown.Enabled  = false;
 				bRankSTRNumericUpDown.Enabled = false;
 				bRankDEXNumericUpDown.Enabled = false;
 				bRankSPDNumericUpDown.Enabled = false;
@@ -78,7 +78,7 @@ namespace Bond_Ring_XML_Generator
 				bRankMOVNumericUpDown.Enabled = false;
 				bRankBLDNumericUpDown.Enabled = false;
 
-				aRankHPNumericUpDown.Enabled = false;
+				aRankHPNumericUpDown.Enabled  = false;
 				aRankSTRNumericUpDown.Enabled = false;
 				aRankDEXNumericUpDown.Enabled = false;
 				aRankSPDNumericUpDown.Enabled = false;
@@ -96,7 +96,7 @@ namespace Bond_Ring_XML_Generator
 				enableSkillBRankCheckBox.Enabled = true;
 				enableSkillARankCheckBox.Enabled = true;
 
-				cRankHPNumericUpDown.Enabled = true;
+				cRankHPNumericUpDown.Enabled  = true;
 				cRankSTRNumericUpDown.Enabled = true;
 				cRankDEXNumericUpDown.Enabled = true;
 				cRankSPDNumericUpDown.Enabled = true;
@@ -107,7 +107,7 @@ namespace Bond_Ring_XML_Generator
 				cRankMOVNumericUpDown.Enabled = true;
 				cRankBLDNumericUpDown.Enabled = true;
 
-				bRankHPNumericUpDown.Enabled = true;
+				bRankHPNumericUpDown.Enabled  = true;
 				bRankSTRNumericUpDown.Enabled = true;
 				bRankDEXNumericUpDown.Enabled = true;
 				bRankSPDNumericUpDown.Enabled = true;
@@ -118,7 +118,7 @@ namespace Bond_Ring_XML_Generator
 				bRankMOVNumericUpDown.Enabled = true;
 				bRankBLDNumericUpDown.Enabled = true;
 
-				aRankHPNumericUpDown.Enabled = true;
+				aRankHPNumericUpDown.Enabled  = true;
 				aRankSTRNumericUpDown.Enabled = true;
 				aRankDEXNumericUpDown.Enabled = true;
 				aRankSPDNumericUpDown.Enabled = true;
@@ -133,8 +133,7 @@ namespace Bond_Ring_XML_Generator
 
 		private void generateButton_Click(object sender, EventArgs e)
 		{
-			// TO-DO: Get RGB Values for jewel and rim
-
+			// TO-DO:
 			string charName		  = nameTextBox.Text.ToString();
 			string selectedEmblem = emblemComboBox.SelectedItem.ToString();
 			string skillID		  = skillIDTextBox.Text.ToString();
@@ -241,16 +240,16 @@ namespace Bond_Ring_XML_Generator
 			}
 
 
+			string sRankText;
 			if (singleRankCheckBox.Checked)
 			{
-				string sRankText;
 				if (enableSkillSRankCheckBox.Checked)
 				{
-					sRankText = $"<Param Out=\"\" Rnid=\"RNID_{emblemCode}_{charName}_S\" Name=\"MID_BONDSRING_{charName}_S\" Help=\"MID_BONDSRING_H_{charName}_S\" Gid=\"GID_{emblemID}\" RingModel=\"\" Rank=\"3\" Icon=\"{charName}\" Enhance.Hp=\"{sRankHP}\" Enhance.Str=\"{sRankSTR}\" Enhance.Tech=\"{sRankDEX}\" Enhance.Quick=\"{sRankSPD}\" Enhance.Luck=\"{sRankLCK}\" Enhance.Def=\"{sRankDEF}\" Enhance.Magic=\"{sRankMAG}\" Enhance.Mdef=\"{sRankRES}\" Enhance.Phys=\"{sRankBLD}\" Enhance.Move=\"{sRankMOV}\" EquipSids=\"{skillID}\" IsSingleRank=\"true\" JewelColorR=\"{jewelRed}\" JewelColorG=\"{jewelGreen}\" JewelColorB=\"{jewelBlue}\" RimColorR=\"{rimRed}\" RimColorG=\"{rimGreen}\" RimColorB=\"{rimBlue}\" />";
+					sRankText = $"<Param Out=\"\" Rnid=\"RNID_{emblemCode}_{charName}_S\" Name=\"MID_BONDSRING_{charName}\" Help=\"MID_BONDSRING_H_{charName}_S\" Gid=\"GID_{emblemID}\" RingModel=\"\" Rank=\"3\" Icon=\"{charName}\" Enhance.Hp=\"{sRankHP}\" Enhance.Str=\"{sRankSTR}\" Enhance.Tech=\"{sRankDEX}\" Enhance.Quick=\"{sRankSPD}\" Enhance.Luck=\"{sRankLCK}\" Enhance.Def=\"{sRankDEF}\" Enhance.Magic=\"{sRankMAG}\" Enhance.Mdef=\"{sRankRES}\" Enhance.Phys=\"{sRankBLD}\" Enhance.Move=\"{sRankMOV}\" EquipSids=\"{skillID}\" IsSingleRank=\"true\" JewelColorR=\"{jewelRed}\" JewelColorG=\"{jewelGreen}\" JewelColorB=\"{jewelBlue}\" RimColorR=\"{rimRed}\" RimColorG=\"{rimGreen}\" RimColorB=\"{rimBlue}\" />";
 				}
 				else
 				{
-					sRankText = $"<Param Out=\"\" Rnid=\"RNID_{emblemCode}_{charName}_S\" Name=\"MID_BONDSRING_{charName}_S\" Help=\"MID_BONDSRING_H_{charName}_S\" Gid=\"GID_{emblemID}\" RingModel=\"\" Rank=\"3\" Icon=\"{charName}\" Enhance.Hp=\"{sRankHP}\" Enhance.Str=\"{sRankSTR}\" Enhance.Tech=\"{sRankDEX}\" Enhance.Quick=\"{sRankSPD}\" Enhance.Luck=\"{sRankLCK}\" Enhance.Def=\"{sRankDEF}\" Enhance.Magic=\"{sRankMAG}\" Enhance.Mdef=\"{sRankRES}\" Enhance.Phys=\"{sRankBLD}\" Enhance.Move=\"{sRankMOV}\" EquipSids=\"\" IsSingleRank=\"true\" JewelColorR=\"{jewelRed}\" JewelColorG=\"{jewelGreen}\" JewelColorB=\"{jewelBlue}\" RimColorR=\"{rimRed}\" RimColorG=\"{rimGreen}\" RimColorB=\"{rimBlue}\" />";
+					sRankText = $"<Param Out=\"\" Rnid=\"RNID_{emblemCode}_{charName}_S\" Name=\"MID_BONDSRING_{charName}\" Help=\"MID_BONDSRING_H_{charName}_S\" Gid=\"GID_{emblemID}\" RingModel=\"\" Rank=\"3\" Icon=\"{charName}\" Enhance.Hp=\"{sRankHP}\" Enhance.Str=\"{sRankSTR}\" Enhance.Tech=\"{sRankDEX}\" Enhance.Quick=\"{sRankSPD}\" Enhance.Luck=\"{sRankLCK}\" Enhance.Def=\"{sRankDEF}\" Enhance.Magic=\"{sRankMAG}\" Enhance.Mdef=\"{sRankRES}\" Enhance.Phys=\"{sRankBLD}\" Enhance.Move=\"{sRankMOV}\" EquipSids=\"\" IsSingleRank=\"true\" JewelColorR=\"{jewelRed}\" JewelColorG=\"{jewelGreen}\" JewelColorB=\"{jewelBlue}\" RimColorR=\"{rimRed}\" RimColorG=\"{rimGreen}\" RimColorB=\"{rimBlue}\" />";
 				}
 				outputTextBox.Text = sRankText;
 			}
@@ -259,42 +258,41 @@ namespace Bond_Ring_XML_Generator
 				string cRankText;
 				string bRankText;
 				string aRankText;
-				string sRankText;
 
 				if (enableSkillCRankCheckBox.Checked)
 				{
-					cRankText = $"<Param Out=\"\" Rnid=\"RNID_{emblemCode}_{charName}_C\" Name=\"MID_BONDSRING_{charName}_C\" Help=\"MID_BONDSRING_H_{charName}_S\" Gid=\"GID_{emblemID}\" RingModel=\"\" Rank=\"0\" Icon=\"{charName}\" Enhance.Hp=\"{cRankHP}\" Enhance.Str=\"{cRankSTR}\" Enhance.Tech=\"{cRankDEX}\" Enhance.Quick=\"{cRankSPD}\" Enhance.Luck=\"{cRankLCK}\" Enhance.Def=\"{cRankDEF}\" Enhance.Magic=\"{cRankMAG}\" Enhance.Mdef=\"{cRankRES}\" Enhance.Phys=\"{cRankBLD}\" Enhance.Move=\"{cRankMOV}\" EquipSids=\"{skillID}\" IsSingleRank=\"false\" JewelColorR=\"{jewelRed}\" JewelColorG=\"{jewelGreen}\" JewelColorB=\"{jewelBlue}\" RimColorR=\"{rimRed}\" RimColorG=\"{rimGreen}\" RimColorB=\"{rimBlue}\" />";
+					cRankText = $"<Param Out=\"\" Rnid=\"RNID_{emblemCode}_{charName}_C\" Name=\"MID_BONDSRING_{charName}\" Help=\"MID_BONDSRING_H_{charName}_S\" Gid=\"GID_{emblemID}\" RingModel=\"\" Rank=\"0\" Icon=\"{charName}\" Enhance.Hp=\"{cRankHP}\" Enhance.Str=\"{cRankSTR}\" Enhance.Tech=\"{cRankDEX}\" Enhance.Quick=\"{cRankSPD}\" Enhance.Luck=\"{cRankLCK}\" Enhance.Def=\"{cRankDEF}\" Enhance.Magic=\"{cRankMAG}\" Enhance.Mdef=\"{cRankRES}\" Enhance.Phys=\"{cRankBLD}\" Enhance.Move=\"{cRankMOV}\" EquipSids=\"{skillID}\" IsSingleRank=\"false\" JewelColorR=\"{jewelRed}\" JewelColorG=\"{jewelGreen}\" JewelColorB=\"{jewelBlue}\" RimColorR=\"{rimRed}\" RimColorG=\"{rimGreen}\" RimColorB=\"{rimBlue}\" />";
 				}
 				else
 				{
-					cRankText = $"<Param Out=\"\" Rnid=\"RNID_{emblemCode}_{charName}_C\" Name=\"MID_BONDSRING_{charName}_C\" Help=\"MID_BONDSRING_H_{charName}_S\" Gid=\"GID_{emblemID}\" RingModel=\"\" Rank=\"0\" Icon=\"{charName}\" Enhance.Hp=\"{cRankHP}\" Enhance.Str=\"{cRankSTR}\" Enhance.Tech=\"{cRankDEX}\" Enhance.Quick=\"{cRankSPD}\" Enhance.Luck=\"{cRankLCK}\" Enhance.Def=\"{cRankDEF}\" Enhance.Magic=\"{cRankMAG}\" Enhance.Mdef=\"{cRankRES}\" Enhance.Phys=\"{cRankBLD}\" Enhance.Move=\"{cRankMOV}\" EquipSids=\"\" IsSingleRank=\"false\" JewelColorR=\"{jewelRed}\" JewelColorG=\"{jewelGreen}\" JewelColorB=\"{jewelBlue}\" RimColorR=\"{rimRed}\" RimColorG=\"{rimGreen}\" RimColorB=\"{rimBlue}\" />";
+					cRankText = $"<Param Out=\"\" Rnid=\"RNID_{emblemCode}_{charName}_C\" Name=\"MID_BONDSRING_{charName}\" Help=\"MID_BONDSRING_H_{charName}_S\" Gid=\"GID_{emblemID}\" RingModel=\"\" Rank=\"0\" Icon=\"{charName}\" Enhance.Hp=\"{cRankHP}\" Enhance.Str=\"{cRankSTR}\" Enhance.Tech=\"{cRankDEX}\" Enhance.Quick=\"{cRankSPD}\" Enhance.Luck=\"{cRankLCK}\" Enhance.Def=\"{cRankDEF}\" Enhance.Magic=\"{cRankMAG}\" Enhance.Mdef=\"{cRankRES}\" Enhance.Phys=\"{cRankBLD}\" Enhance.Move=\"{cRankMOV}\" EquipSids=\"\" IsSingleRank=\"false\" JewelColorR=\"{jewelRed}\" JewelColorG=\"{jewelGreen}\" JewelColorB=\"{jewelBlue}\" RimColorR=\"{rimRed}\" RimColorG=\"{rimGreen}\" RimColorB=\"{rimBlue}\" />";
 				}
 
 				if (enableSkillBRankCheckBox.Checked)
 				{
-					bRankText = $"<Param Out=\"\" Rnid=\"RNID_{emblemCode}_{charName}_B\" Name=\"MID_BONDSRING_{charName}_B\" Help=\"MID_BONDSRING_H_{charName}_S\" Gid=\"GID_{emblemID}\" RingModel=\"\" Rank=\"1\" Icon=\"{charName}\" Enhance.Hp=\"{bRankHP}\" Enhance.Str=\"{bRankSTR}\" Enhance.Tech=\"{bRankDEX}\" Enhance.Quick=\"{bRankSPD}\" Enhance.Luck=\"{bRankLCK}\" Enhance.Def=\"{bRankDEF}\" Enhance.Magic=\"{bRankMAG}\" Enhance.Mdef=\"{bRankRES}\" Enhance.Phys=\"{bRankBLD}\" Enhance.Move=\"{bRankMOV}\" EquipSids=\"{skillID}\" IsSingleRank=\"false\" JewelColorR=\"{jewelRed}\" JewelColorG=\"{jewelGreen}\" JewelColorB=\"{jewelBlue}\" RimColorR=\"{rimRed}\" RimColorG=\"{rimGreen}\" RimColorB=\"{rimBlue}\" />";
+					bRankText = $"<Param Out=\"\" Rnid=\"RNID_{emblemCode}_{charName}_B\" Name=\"MID_BONDSRING_{charName}\" Help=\"MID_BONDSRING_H_{charName}_S\" Gid=\"GID_{emblemID}\" RingModel=\"\" Rank=\"1\" Icon=\"{charName}\" Enhance.Hp=\"{bRankHP}\" Enhance.Str=\"{bRankSTR}\" Enhance.Tech=\"{bRankDEX}\" Enhance.Quick=\"{bRankSPD}\" Enhance.Luck=\"{bRankLCK}\" Enhance.Def=\"{bRankDEF}\" Enhance.Magic=\"{bRankMAG}\" Enhance.Mdef=\"{bRankRES}\" Enhance.Phys=\"{bRankBLD}\" Enhance.Move=\"{bRankMOV}\" EquipSids=\"{skillID}\" IsSingleRank=\"false\" JewelColorR=\"{jewelRed}\" JewelColorG=\"{jewelGreen}\" JewelColorB=\"{jewelBlue}\" RimColorR=\"{rimRed}\" RimColorG=\"{rimGreen}\" RimColorB=\"{rimBlue}\" />";
 				}
 				else
 				{
-					bRankText = $"<Param Out=\"\" Rnid=\"RNID_{emblemCode}_{charName}_B\" Name=\"MID_BONDSRING_{charName}_B\" Help=\"MID_BONDSRING_H_{charName}_S\" Gid=\"GID_{emblemID}\" RingModel=\"\" Rank=\"1\" Icon=\"{charName}\" Enhance.Hp=\"{bRankHP}\" Enhance.Str=\"{bRankSTR}\" Enhance.Tech=\"{bRankDEX}\" Enhance.Quick=\"{bRankSPD}\" Enhance.Luck=\"{bRankLCK}\" Enhance.Def=\"{bRankDEF}\" Enhance.Magic=\"{bRankMAG}\" Enhance.Mdef=\"{bRankRES}\" Enhance.Phys=\"{bRankBLD}\" Enhance.Move=\"{bRankMOV}\" EquipSids=\"\" IsSingleRank=\"false\" JewelColorR=\"{jewelRed}\" JewelColorG=\"{jewelGreen}\" JewelColorB=\"{jewelBlue}\" RimColorR=\"{rimRed}\" RimColorG=\"{rimGreen}\" RimColorB=\"{rimBlue}\" />";
+					bRankText = $"<Param Out=\"\" Rnid=\"RNID_{emblemCode}_{charName}_B\" Name=\"MID_BONDSRING_{charName}\" Help=\"MID_BONDSRING_H_{charName}_S\" Gid=\"GID_{emblemID}\" RingModel=\"\" Rank=\"1\" Icon=\"{charName}\" Enhance.Hp=\"{bRankHP}\" Enhance.Str=\"{bRankSTR}\" Enhance.Tech=\"{bRankDEX}\" Enhance.Quick=\"{bRankSPD}\" Enhance.Luck=\"{bRankLCK}\" Enhance.Def=\"{bRankDEF}\" Enhance.Magic=\"{bRankMAG}\" Enhance.Mdef=\"{bRankRES}\" Enhance.Phys=\"{bRankBLD}\" Enhance.Move=\"{bRankMOV}\" EquipSids=\"\" IsSingleRank=\"false\" JewelColorR=\"{jewelRed}\" JewelColorG=\"{jewelGreen}\" JewelColorB=\"{jewelBlue}\" RimColorR=\"{rimRed}\" RimColorG=\"{rimGreen}\" RimColorB=\"{rimBlue}\" />";
 				}
 
 				if (enableSkillARankCheckBox.Checked)
 				{
-					aRankText = $"<Param Out=\"\" Rnid=\"RNID_{emblemCode}_{charName}_A\" Name=\"MID_BONDSRING_{charName}_A\" Help=\"MID_BONDSRING_H_{charName}_S\" Gid=\"GID_{emblemID}\" RingModel=\"\" Rank=\"2\" Icon=\"{charName}\" Enhance.Hp=\"{aRankHP}\" Enhance.Str=\"{aRankSTR}\" Enhance.Tech=\"{aRankDEX}\" Enhance.Quick=\"{aRankSPD}\" Enhance.Luck=\"{aRankLCK}\" Enhance.Def=\"{aRankDEF}\" Enhance.Magic=\"{aRankMAG}\" Enhance.Mdef=\"{aRankRES}\" Enhance.Phys=\"{aRankBLD}\" Enhance.Move=\"{aRankMOV}\" EquipSids=\"{skillID}\" IsSingleRank=\"false\" JewelColorR=\"{jewelRed}\" JewelColorG=\"{jewelGreen}\" JewelColorB=\"{jewelBlue}\" RimColorR=\"{rimRed}\" RimColorG=\"{rimGreen}\" RimColorB=\"{rimBlue}\" />";
+					aRankText = $"<Param Out=\"\" Rnid=\"RNID_{emblemCode}_{charName}_A\" Name=\"MID_BONDSRING_{charName}\" Help=\"MID_BONDSRING_H_{charName}_S\" Gid=\"GID_{emblemID}\" RingModel=\"\" Rank=\"2\" Icon=\"{charName}\" Enhance.Hp=\"{aRankHP}\" Enhance.Str=\"{aRankSTR}\" Enhance.Tech=\"{aRankDEX}\" Enhance.Quick=\"{aRankSPD}\" Enhance.Luck=\"{aRankLCK}\" Enhance.Def=\"{aRankDEF}\" Enhance.Magic=\"{aRankMAG}\" Enhance.Mdef=\"{aRankRES}\" Enhance.Phys=\"{aRankBLD}\" Enhance.Move=\"{aRankMOV}\" EquipSids=\"{skillID}\" IsSingleRank=\"false\" JewelColorR=\"{jewelRed}\" JewelColorG=\"{jewelGreen}\" JewelColorB=\"{jewelBlue}\" RimColorR=\"{rimRed}\" RimColorG=\"{rimGreen}\" RimColorB=\"{rimBlue}\" />";
 				}
 				else
 				{
-					aRankText = $"<Param Out=\"\" Rnid=\"RNID_{emblemCode}_{charName}_A\" Name=\"MID_BONDSRING_{charName}_A\" Help=\"MID_BONDSRING_H_{charName}_S\" Gid=\"GID_{emblemID}\" RingModel=\"\" Rank=\"2\" Icon=\"{charName}\" Enhance.Hp=\"{aRankHP}\" Enhance.Str=\"{aRankSTR}\" Enhance.Tech=\"{aRankDEX}\" Enhance.Quick=\"{aRankSPD}\" Enhance.Luck=\"{aRankLCK}\" Enhance.Def=\"{aRankDEF}\" Enhance.Magic=\"{aRankMAG}\" Enhance.Mdef=\"{aRankRES}\" Enhance.Phys=\"{aRankBLD}\" Enhance.Move=\"{aRankMOV}\" EquipSids=\"\" IsSingleRank=\"false\" JewelColorR=\"{jewelRed}\" JewelColorG=\"{jewelGreen}\" JewelColorB=\"{jewelBlue}\" RimColorR=\"{rimRed}\" RimColorG=\"{rimGreen}\" RimColorB=\"{rimBlue}\" />";
+					aRankText = $"<Param Out=\"\" Rnid=\"RNID_{emblemCode}_{charName}_A\" Name=\"MID_BONDSRING_{charName}\" Help=\"MID_BONDSRING_H_{charName}_S\" Gid=\"GID_{emblemID}\" RingModel=\"\" Rank=\"2\" Icon=\"{charName}\" Enhance.Hp=\"{aRankHP}\" Enhance.Str=\"{aRankSTR}\" Enhance.Tech=\"{aRankDEX}\" Enhance.Quick=\"{aRankSPD}\" Enhance.Luck=\"{aRankLCK}\" Enhance.Def=\"{aRankDEF}\" Enhance.Magic=\"{aRankMAG}\" Enhance.Mdef=\"{aRankRES}\" Enhance.Phys=\"{aRankBLD}\" Enhance.Move=\"{aRankMOV}\" EquipSids=\"\" IsSingleRank=\"false\" JewelColorR=\"{jewelRed}\" JewelColorG=\"{jewelGreen}\" JewelColorB=\"{jewelBlue}\" RimColorR=\"{rimRed}\" RimColorG=\"{rimGreen}\" RimColorB=\"{rimBlue}\" />";
 				}
 
 				if (enableSkillSRankCheckBox.Checked)
 				{
-					sRankText = $"<Param Out=\"\" Rnid=\"RNID_{emblemCode}_{charName}_S\" Name=\"MID_BONDSRING_{charName}_S\" Help=\"MID_BONDSRING_H_{charName}_S\" Gid=\"GID_{emblemID}\" RingModel=\"\" Rank=\"3\" Icon=\"{charName}\" Enhance.Hp=\"{sRankHP}\" Enhance.Str=\"{sRankSTR}\" Enhance.Tech=\"{sRankDEX}\" Enhance.Quick=\"{sRankSPD}\" Enhance.Luck=\"{sRankLCK}\" Enhance.Def=\"{sRankDEF}\" Enhance.Magic=\"{sRankMAG}\" Enhance.Mdef=\"{sRankRES}\" Enhance.Phys=\"{sRankBLD}\" Enhance.Move=\"{sRankMOV}\" EquipSids=\"{skillID}\" IsSingleRank=\"false\" JewelColorR=\"{jewelRed}\" JewelColorG=\"{jewelGreen}\" JewelColorB=\"{jewelBlue}\" RimColorR=\"{rimRed}\" RimColorG=\"{rimGreen}\" RimColorB=\"{rimBlue}\" />";
+					sRankText = $"<Param Out=\"\" Rnid=\"RNID_{emblemCode}_{charName}_S\" Name=\"MID_BONDSRING_{charName}\" Help=\"MID_BONDSRING_H_{charName}_S\" Gid=\"GID_{emblemID}\" RingModel=\"\" Rank=\"3\" Icon=\"{charName}\" Enhance.Hp=\"{sRankHP}\" Enhance.Str=\"{sRankSTR}\" Enhance.Tech=\"{sRankDEX}\" Enhance.Quick=\"{sRankSPD}\" Enhance.Luck=\"{sRankLCK}\" Enhance.Def=\"{sRankDEF}\" Enhance.Magic=\"{sRankMAG}\" Enhance.Mdef=\"{sRankRES}\" Enhance.Phys=\"{sRankBLD}\" Enhance.Move=\"{sRankMOV}\" EquipSids=\"{skillID}\" IsSingleRank=\"false\" JewelColorR=\"{jewelRed}\" JewelColorG=\"{jewelGreen}\" JewelColorB=\"{jewelBlue}\" RimColorR=\"{rimRed}\" RimColorG=\"{rimGreen}\" RimColorB=\"{rimBlue}\" />";
 				}
 				else
 				{
-					sRankText = $"<Param Out=\"\" Rnid=\"RNID_{emblemCode}_{charName}_S\" Name=\"MID_BONDSRING_{charName}_S\" Help=\"MID_BONDSRING_H_{charName}_S\" Gid=\"GID_{emblemID}\" RingModel=\"\" Rank=\"3\" Icon=\"{charName}\" Enhance.Hp=\"{sRankHP}\" Enhance.Str=\"{sRankSTR}\" Enhance.Tech=\"{sRankDEX}\" Enhance.Quick=\"{sRankSPD}\" Enhance.Luck=\"{sRankLCK}\" Enhance.Def=\"{sRankDEF}\" Enhance.Magic=\"{sRankMAG}\" Enhance.Mdef=\"{sRankRES}\" Enhance.Phys=\"{sRankBLD}\" Enhance.Move=\"{sRankMOV}\" EquipSids=\"\" IsSingleRank=\"false\" JewelColorR=\"{jewelRed}\" JewelColorG=\"{jewelGreen}\" JewelColorB=\"{jewelBlue}\" RimColorR=\"{rimRed}\" RimColorG=\"{rimGreen}\" RimColorB=\"{rimBlue}\" />";
+					sRankText = $"<Param Out=\"\" Rnid=\"RNID_{emblemCode}_{charName}_S\" Name=\"MID_BONDSRING_{charName}\" Help=\"MID_BONDSRING_H_{charName}_S\" Gid=\"GID_{emblemID}\" RingModel=\"\" Rank=\"3\" Icon=\"{charName}\" Enhance.Hp=\"{sRankHP}\" Enhance.Str=\"{sRankSTR}\" Enhance.Tech=\"{sRankDEX}\" Enhance.Quick=\"{sRankSPD}\" Enhance.Luck=\"{sRankLCK}\" Enhance.Def=\"{sRankDEF}\" Enhance.Magic=\"{sRankMAG}\" Enhance.Mdef=\"{sRankRES}\" Enhance.Phys=\"{sRankBLD}\" Enhance.Move=\"{sRankMOV}\" EquipSids=\"\" IsSingleRank=\"false\" JewelColorR=\"{jewelRed}\" JewelColorG=\"{jewelGreen}\" JewelColorB=\"{jewelBlue}\" RimColorR=\"{rimRed}\" RimColorG=\"{rimGreen}\" RimColorB=\"{rimBlue}\" />";
 				}
 
 				outputTextBox.Text = cRankText + "\n" + bRankText + "\n" + aRankText + "\n" + sRankText;
