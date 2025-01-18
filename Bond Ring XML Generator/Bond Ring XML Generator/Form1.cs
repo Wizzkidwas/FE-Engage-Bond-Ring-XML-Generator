@@ -351,6 +351,53 @@ namespace Bond_Ring_XML_Generator
 			SetRimColourBoxColour((int)rimRedNumericUpDown.Value, (int)rimGreenNumericUpDown.Value, (int)rimBlueNumericUpDown.Value);
 		}
 
+		private void resetStatsButton_Click(object sender, EventArgs e)
+		{
+			cRankHPNumericUpDown.Value  = 0;
+			cRankSTRNumericUpDown.Value = 0;
+			cRankDEXNumericUpDown.Value = 0;
+			cRankSPDNumericUpDown.Value = 0;
+			cRankLCKNumericUpDown.Value = 0;
+			cRankDEFNumericUpDown.Value = 0;
+			cRankMAGNumericUpDown.Value = 0;
+			cRankRESNumericUpDown.Value = 0;
+			cRankBLDNumericUpDown.Value = 0;
+			cRankMOVNumericUpDown.Value = 0;
+
+			bRankHPNumericUpDown.Value  = 0;
+			bRankSTRNumericUpDown.Value = 0;
+			bRankDEXNumericUpDown.Value = 0;
+			bRankSPDNumericUpDown.Value = 0;
+			bRankLCKNumericUpDown.Value = 0;
+			bRankDEFNumericUpDown.Value = 0;
+			bRankMAGNumericUpDown.Value = 0;
+			bRankRESNumericUpDown.Value = 0;
+			bRankBLDNumericUpDown.Value = 0;
+			bRankMOVNumericUpDown.Value = 0;
+
+			aRankHPNumericUpDown.Value  = 0;
+			aRankSTRNumericUpDown.Value = 0;
+			aRankDEXNumericUpDown.Value = 0;
+			aRankSPDNumericUpDown.Value = 0;
+			aRankLCKNumericUpDown.Value = 0;
+			aRankDEFNumericUpDown.Value = 0;
+			aRankMAGNumericUpDown.Value = 0;
+			aRankRESNumericUpDown.Value = 0;
+			aRankBLDNumericUpDown.Value = 0;
+			aRankMOVNumericUpDown.Value = 0;
+
+			sRankHPNumericUpDown.Value  = 0;
+			sRankSTRNumericUpDown.Value = 0;
+			sRankDEXNumericUpDown.Value = 0;
+			sRankSPDNumericUpDown.Value = 0;
+			sRankLCKNumericUpDown.Value = 0;
+			sRankDEFNumericUpDown.Value = 0;
+			sRankMAGNumericUpDown.Value = 0;
+			sRankRESNumericUpDown.Value = 0;
+			sRankBLDNumericUpDown.Value = 0;
+			sRankMOVNumericUpDown.Value = 0;
+		}
+
 		private string ParseEmblemID(string emblemName)
 		{
 			switch (emblemName)
@@ -431,7 +478,7 @@ namespace Bond_Ring_XML_Generator
 				case "Alear":
 					return "Engage";
 				case "Tiki":
-					return "チキ";
+					return "紋章";
 				case "Hector":
 					return "烈火";
 				case "Soren":
