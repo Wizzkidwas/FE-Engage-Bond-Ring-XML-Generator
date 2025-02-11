@@ -71,6 +71,7 @@ namespace Bond_Ring_XML_Generator
 			this.rimColourDialog = new System.Windows.Forms.ColorDialog();
 			this.copyButton = new System.Windows.Forms.Button();
 			this.statsGroupBox = new System.Windows.Forms.GroupBox();
+			this.resetStatsButton = new System.Windows.Forms.Button();
 			this.sRankStatsLabel = new System.Windows.Forms.Label();
 			this.aRankStatsLabel = new System.Windows.Forms.Label();
 			this.bRankStatsLabel = new System.Windows.Forms.Label();
@@ -156,7 +157,7 @@ namespace Bond_Ring_XML_Generator
 			this.cRankSPDNumericUpDown = new System.Windows.Forms.NumericUpDown();
 			this.cRankLCKNumericUpDown = new System.Windows.Forms.NumericUpDown();
 			this.statsToolTip = new System.Windows.Forms.ToolTip(this.components);
-			this.resetStatsButton = new System.Windows.Forms.Button();
+			this.fehRingModelCheckBox = new System.Windows.Forms.CheckBox();
 			this.skillGroupBox.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.jewelRedNumericUpDown)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.jewelGreenNumericUpDown)).BeginInit();
@@ -728,6 +729,16 @@ namespace Bond_Ring_XML_Generator
 			this.statsGroupBox.TabStop = false;
 			this.statsGroupBox.Text = "Stats";
 			this.statsToolTip.SetToolTip(this.statsGroupBox, resources.GetString("statsGroupBox.ToolTip"));
+			// 
+			// resetStatsButton
+			// 
+			this.resetStatsButton.Location = new System.Drawing.Point(134, 10);
+			this.resetStatsButton.Name = "resetStatsButton";
+			this.resetStatsButton.Size = new System.Drawing.Size(75, 23);
+			this.resetStatsButton.TabIndex = 114;
+			this.resetStatsButton.Text = "Reset";
+			this.resetStatsButton.UseVisualStyleBackColor = true;
+			this.resetStatsButton.Click += new System.EventHandler(this.resetStatsButton_Click);
 			// 
 			// sRankStatsLabel
 			// 
@@ -1609,15 +1620,16 @@ namespace Bond_Ring_XML_Generator
 			this.cRankLCKNumericUpDown.Size = new System.Drawing.Size(35, 20);
 			this.cRankLCKNumericUpDown.TabIndex = 34;
 			// 
-			// resetStatsButton
+			// fehRingModelCheckBox
 			// 
-			this.resetStatsButton.Location = new System.Drawing.Point(134, 10);
-			this.resetStatsButton.Name = "resetStatsButton";
-			this.resetStatsButton.Size = new System.Drawing.Size(75, 23);
-			this.resetStatsButton.TabIndex = 114;
-			this.resetStatsButton.Text = "Reset";
-			this.resetStatsButton.UseVisualStyleBackColor = true;
-			this.resetStatsButton.Click += new System.EventHandler(this.resetStatsButton_Click);
+			this.fehRingModelCheckBox.AutoSize = true;
+			this.fehRingModelCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.fehRingModelCheckBox.Location = new System.Drawing.Point(13, 277);
+			this.fehRingModelCheckBox.Name = "fehRingModelCheckBox";
+			this.fehRingModelCheckBox.Size = new System.Drawing.Size(131, 17);
+			this.fehRingModelCheckBox.TabIndex = 17;
+			this.fehRingModelCheckBox.Text = "Use FEH rings model?";
+			this.fehRingModelCheckBox.UseVisualStyleBackColor = true;
 			// 
 			// Form1
 			// 
@@ -1625,6 +1637,7 @@ namespace Bond_Ring_XML_Generator
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
 			this.ClientSize = new System.Drawing.Size(784, 561);
+			this.Controls.Add(this.fehRingModelCheckBox);
 			this.Controls.Add(this.copyButton);
 			this.Controls.Add(this.rimColourGroupBox);
 			this.Controls.Add(this.generateButton);
@@ -1835,6 +1848,7 @@ namespace Bond_Ring_XML_Generator
 		private System.Windows.Forms.Label bRankStatsLabel;
 		private System.Windows.Forms.Label cRankStatslabel;
 		private System.Windows.Forms.Button resetStatsButton;
+		private System.Windows.Forms.CheckBox fehRingModelCheckBox;
 	}
 }
 
