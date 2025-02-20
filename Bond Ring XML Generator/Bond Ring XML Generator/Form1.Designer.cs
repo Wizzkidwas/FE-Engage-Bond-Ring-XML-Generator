@@ -278,6 +278,7 @@ namespace Bond_Ring_XML_Generator
             "Camilla",
             "Veronica",
             "3 Houses",
+			"No Emblem",
             "Custom"});
 			this.emblemComboBox.Location = new System.Drawing.Point(63, 42);
 			this.emblemComboBox.Name = "emblemComboBox";
