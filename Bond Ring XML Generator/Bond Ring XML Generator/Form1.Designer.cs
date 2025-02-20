@@ -1654,6 +1654,7 @@ namespace Bond_Ring_XML_Generator
 			this.Controls.Add(this.jewelColourGroupBox);
 			this.Controls.Add(this.statsGroupBox);
 			this.HelpButton = true;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.MaximumSize = new System.Drawing.Size(800, 600);
 			this.MinimumSize = new System.Drawing.Size(800, 600);
