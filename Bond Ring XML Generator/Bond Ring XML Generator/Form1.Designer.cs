@@ -29,7 +29,6 @@ namespace Bond_Ring_XML_Generator
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.nameTextBox = new System.Windows.Forms.TextBox();
 			this.nameTextBoxLabel = new System.Windows.Forms.Label();
@@ -155,7 +154,6 @@ namespace Bond_Ring_XML_Generator
 			this.cRankDEFNumericUpDown = new System.Windows.Forms.NumericUpDown();
 			this.cRankSPDNumericUpDown = new System.Windows.Forms.NumericUpDown();
 			this.cRankLCKNumericUpDown = new System.Windows.Forms.NumericUpDown();
-			this.statsToolTip = new System.Windows.Forms.ToolTip(this.components);
 			this.fehRingModelCheckBox = new System.Windows.Forms.CheckBox();
 			this.skillGroupBox.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.jewelRedNumericUpDown)).BeginInit();
@@ -716,7 +714,6 @@ namespace Bond_Ring_XML_Generator
 			this.statsGroupBox.TabIndex = 30;
 			this.statsGroupBox.TabStop = false;
 			this.statsGroupBox.Text = "Stats";
-			this.statsToolTip.SetToolTip(this.statsGroupBox, resources.GetString("statsGroupBox.ToolTip"));
 			// 
 			// resetStatsButton
 			// 
@@ -1750,7 +1747,6 @@ namespace Bond_Ring_XML_Generator
 		private System.Windows.Forms.ColorDialog rimColourDialog;
 		private System.Windows.Forms.Button copyButton;
 		private System.Windows.Forms.GroupBox statsGroupBox;
-		private System.Windows.Forms.ToolTip statsToolTip;
 		private System.Windows.Forms.NumericUpDown cRankHPNumericUpDown;
 		private System.Windows.Forms.NumericUpDown sRankMOVNumericUpDown;
 		private System.Windows.Forms.NumericUpDown sRankBLDNumericUpDown;
