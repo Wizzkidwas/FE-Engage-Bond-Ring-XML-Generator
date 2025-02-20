@@ -43,7 +43,6 @@ namespace Bond_Ring_XML_Generator
 			this.skillIDLabel = new System.Windows.Forms.Label();
 			this.skillIDTextBox = new System.Windows.Forms.TextBox();
 			this.enableSkillCRankCheckBox = new System.Windows.Forms.CheckBox();
-			this.gIDToolTip = new System.Windows.Forms.ToolTip(this.components);
 			this.enableSkillBRankCheckBox = new System.Windows.Forms.CheckBox();
 			this.enableSkillARankCheckBox = new System.Windows.Forms.CheckBox();
 			this.enableSkillSRankCheckBox = new System.Windows.Forms.CheckBox();
@@ -246,8 +245,6 @@ namespace Bond_Ring_XML_Generator
 			this.customGIDLabel.Size = new System.Drawing.Size(67, 13);
 			this.customGIDLabel.TabIndex = 5;
 			this.customGIDLabel.Text = "Custom GID:";
-			this.gIDToolTip.SetToolTip(this.customGIDLabel, "\"GID\" refers to the internal ID of the emblem used in the XML files. \nDo not incl" +
-        "ude the \"GID_\" in the text box.");
 			// 
 			// customGIDTextBox
 			// 
@@ -257,8 +254,6 @@ namespace Bond_Ring_XML_Generator
 			this.customGIDTextBox.Name = "customGIDTextBox";
 			this.customGIDTextBox.Size = new System.Drawing.Size(199, 20);
 			this.customGIDTextBox.TabIndex = 6;
-			this.gIDToolTip.SetToolTip(this.customGIDTextBox, "\"GID\" refers to the internal ID of the emblem used in the XML files. \nDo not incl" +
-        "ude the \"GID_\" in the text box.");
 			// 
 			// emblemComboBox
 			// 
@@ -353,13 +348,6 @@ namespace Bond_Ring_XML_Generator
 			this.enableSkillCRankCheckBox.TabIndex = 13;
 			this.enableSkillCRankCheckBox.Text = "Enable Skill for C Rank?";
 			this.enableSkillCRankCheckBox.UseVisualStyleBackColor = true;
-			// 
-			// gIDToolTip
-			// 
-			this.gIDToolTip.AutomaticDelay = 100;
-			this.gIDToolTip.AutoPopDelay = 99999999;
-			this.gIDToolTip.InitialDelay = 100;
-			this.gIDToolTip.ReshowDelay = 20;
 			// 
 			// enableSkillBRankCheckBox
 			// 
@@ -1735,7 +1723,6 @@ namespace Bond_Ring_XML_Generator
 		private System.Windows.Forms.Label skillIDLabel;
 		private System.Windows.Forms.TextBox skillIDTextBox;
 		private System.Windows.Forms.CheckBox enableSkillCRankCheckBox;
-		private System.Windows.Forms.ToolTip gIDToolTip;
 		private System.Windows.Forms.CheckBox enableSkillBRankCheckBox;
 		private System.Windows.Forms.CheckBox enableSkillARankCheckBox;
 		private System.Windows.Forms.CheckBox enableSkillSRankCheckBox;

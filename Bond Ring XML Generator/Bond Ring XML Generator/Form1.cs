@@ -135,7 +135,6 @@ namespace Bond_Ring_XML_Generator
 		{
 			string charName		  = nameTextBox.Text.ToString();
 			string selectedEmblem = emblemComboBox.SelectedItem.ToString();
-			string skillID		  = skillIDTextBox.Text.ToString();
 
 			string jewelRed	  = jewelRedNumericUpDown.Value.ToString();
 			string jewelGreen = jewelGreenNumericUpDown.Value.ToString();
@@ -144,6 +143,12 @@ namespace Bond_Ring_XML_Generator
 			string rimGreen = rimGreenNumericUpDown.Value.ToString();
 			string rimBlue  = rimBlueNumericUpDown.Value.ToString();
 
+			string skillID = skillIDTextBox.Text.ToString();
+			if (!skillID.ToUpper().StartsWith("SID_"))
+			{
+				skillID = string.Concat("SID_", skillID);
+			}
+			
 			string ringModel = "";
 			if (fehRingModelCheckBox.Checked)
 			{
@@ -234,8 +239,13 @@ namespace Bond_Ring_XML_Generator
 			string emblemID;
 			if (selectedEmblem == "Custom")
 			{
-				emblemID = customGIDTextBox.Text.ToString();
-				emblemCode = customGIDTextBox.Text.ToString();
+				string customGIDCheck = customGIDTextBox.Text.ToString();
+				if (customGIDCheck.ToUpper().StartsWith("GID_"))
+				{
+					customGIDCheck = customGIDCheck.Remove(0, 4);
+				}
+				emblemID   = customGIDCheck;
+				emblemCode = customGIDCheck;
 			}
 			else
 			{
