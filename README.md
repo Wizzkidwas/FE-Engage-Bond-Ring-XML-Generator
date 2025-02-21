@@ -33,4 +33,4 @@ Upon opening the program, you'll be met with this interface
 - If satisfied, click "Copy Text" to copy it to your clipboard, from there it's as easy as pasting it into the XML file (or anywhere else you want to put it)
 - You can manually highlight the text and use CTRL+C to copy
 
-You can now save the suffering of constant small copy pastes and edits and jsut have it all done in one!
+You can now save the suffering of constant small copy pastes and edits and just have it all done in one!
